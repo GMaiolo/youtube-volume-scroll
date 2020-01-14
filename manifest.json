@@ -1,0 +1,17 @@
+{
+  "author": "Guillermo Maiolo",
+  "manifest_version": 2,
+  "name": "Youtube Volume Scroll",
+  "description": "Youtube Volume Scroll",
+  "version": "1.0.0",
+  "browser_action": {
+    "default_title": "Youtube Volume Scroll"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["*://*.youtube.com/*"],
+      "run_at": "document_idle"
+    }
+  ]
+}
